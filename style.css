@@ -6,7 +6,9 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    font-family: serif;
+    font-family: sans-serif;
+    background: fixed;
+    background: linear-gradient(rgba(208, 0, 255, 0.511), rgba(0, 255, 234, 0.516));
   }
   .navbar-brand{
     color:red;
@@ -23,47 +25,48 @@ body{
   }
 
   /* about section */
-#about{
+ #about{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 50vh 0;
+  
 }
+
 #about .col-1{
-  flex-basis: 35%;
+  flex-basis: 30%;
 }
 #about .col-2{
   margin: 3vh 0;
-  flex-basis: 60%;
+  flex-basis: 70%;
 }
+
 .col-2 .title{
-  font-size: 3vw;
+  font-size: 2vw;
 }
+
 .col-2 span u{
   font-weight: 600;
-  font-size: 5vw;
+  font-size: 4vw;
   color: rgb(50, 20, 220);
 }
+
 .col-2 span {
   font-weight: 600;
-  font-size: 4vw;
+  font-size: 2vw;
   color: crimson;
 }
+
 #about .col-1 img{
-  width:32vw;
+  width: 20vw;
   margin-left: 2vw;
-  margin: 3vh 2vw;
   border-radius: 15px;
   border: 5px solid crimson;
-
 }
- /* video playlist styling */
- #videoPlaylist{ 
-  background-color: rgb(237, 196, 205);
- }
+ 
  #videoPlaylist h1{
   text-align: center;
   color: crimson;
-  background-color: aqua;
   font-weight: 600;
  }
  .video{
@@ -77,29 +80,23 @@ body{
  }
  .video h2{
   color: green;
-  font-size: 4vw;
- }
- .video p{ 
   font-size: 3vw;
  }
+ .video p{ 
+  font-size: 2vw;
+ }
 .video video{
-  width: 45vw;  
+  width: 40vw;  
   cursor: pointer;
   border-radius: 1vw;
-  border: 0.2vw solid whitesmoke;
+  border: 0.2vw solid crimson; 
 }
-.vid-1{
+ .vid-1{
   flex-basis: 49%;
-  border: 0.2vw solid crimson;
-  margin: 0.5vh 0;
+  margin: 5vh 0;
   padding: 1vh 0;
 }
-.vid-2{
-  flex-basis: 49%;
-  border: 0.2vw solid crimson;
-  margin: 0.5vh 0;
-  padding: 1vh 0;
-}
+
 .video button{
   border-radius: 1vw;
   margin: 1vh 0;
@@ -111,6 +108,7 @@ body{
   cursor: pointer;
   border-radius: 1vw;
   border: 0.2vw solid crimson;
+  margin: 5vh 0;
 }
  .photo{
   /* display:grid; */
@@ -122,15 +120,14 @@ body{
   
  }
 #photoList h1{
+  margin: 3vh;
   text-align: center;
   font-weight: 600;
-  background-color: aqua;
   color: crimson;
 }
 #contactList h1{
   text-align: center;
   font-weight: 600;
-  background-color: aqua;
   color: crimson;
 }
 
@@ -144,12 +141,12 @@ body{
 #contact h1{
   text-align: center;
   font-weight: 600;
-  background-color: aqua;
   color: crimson;
 }
 .contact-in{
   
   width: 80%;
+  color: crimson;
   height: auto;
   margin: auto;
   display: flex;
@@ -228,6 +225,9 @@ body{
   /* responsive */
 
   @media (max-width:650px){
+    #about{
+     padding: 5vh 0;
+    }
     .contact-in{
       display: block;
     }
@@ -244,12 +244,22 @@ body{
       font-size: 4vw;
      } 
     .photo{
-      display: block;
-      
+      display: block;      
     }
-     .photo img{
+    #about .col-2{
+      flex-basis: 60%;
+    }
+    #about .col-1 img{
+      width: 30vw;
+      margin: 5vh 0;
+      margin-left: 4vw;
+    }
+    #about .col-2{
+      margin: 5vh 0;
+    }
+    .photo img{
       width: 95vw;
-      margin: 1vh 0;
+      margin: 5vh 0;
     }
     .footer{
       padding: 15px;
