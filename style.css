@@ -246,9 +246,6 @@ body{
     .photo{
       display: block;      
     }
-    #about .col-2{
-      flex-basis: 60%;
-    }
     #about .col-1 img{
       width: 30vw;
       margin: 5vh 0;
@@ -256,6 +253,18 @@ body{
     }
     #about .col-2{
       margin: 5vh 0;
+       flex-basis: 63%;
+    }
+      .col-2 .title{
+      font-size: 3vw;
+    }
+    
+    .col-2 span u{
+      font-size: 6vw;
+    }
+    
+    .col-2 span {
+      font-size: 3vw;
     }
     .photo img{
       width: 95vw;
