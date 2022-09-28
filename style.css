@@ -8,7 +8,7 @@ html{
 body{
     font-family: sans-serif;
     background: fixed;
-    background: linear-gradient(rgba(208, 0, 255, 0.511), rgba(0, 255, 234, 0.516));
+    background-image:url(p05.jpg);
   }
   .navbar-brand{
     color:red;
@@ -26,6 +26,7 @@ body{
 
   /* about section */
  #about{
+     background: linear-gradient(rgba(208, 0, 255, 0.511), rgba(0, 255, 234, 0.516));
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -55,6 +56,10 @@ body{
   font-weight: 600;
   font-size: 2vw;
   color: crimson;
+}
+
+#videoPlaylist{
+  background: linear-gradient(rgba(5, 139, 242, 0.511), rgba(255, 0, 255, 0.516));
 }
 
 #about .col-1 img{
@@ -110,6 +115,11 @@ body{
   border: 0.2vw solid crimson;
   margin: 5vh 0;
 }
+
+#photoList {
+  background: linear-gradient(rgba(0, 0, 255, 0.511), rgba(166, 255, 0, 0.516));
+}
+
  .photo{
   /* display:grid; */
   text-align: center;
