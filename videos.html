@@ -5,11 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiva Dj Video Gallary</title>
-    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lavender;
+        }
+
+        .header {
+            text-align: center;
+            pad: 32px;
+            background-color: rgb(44, 38, 151);
+            margin-top: 0;
+            padding: 5px;
+            color: orange;
+            box-shadow: 1px 5px 5px red;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .column {
+            flex: 33.3%;/*25*/            
+            max-width: 33.3%;
+            /* padding: px; */
+        }
+
+        .column iframe {
+
+            margin-top: 30px;
+            vertical-align: middle;
+            border-radius: 5px;
+            border: 3mm ridge rgb(57, 13, 201);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+        }
+
+        @media(max-width:800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media(max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1 style="color:crimson; text-align:center;">Soon Update</h1>
-    <h2 style="text-align:center;">Currently working on video gallary</h2>
+
+    <div class="header">
+        <h1>Shiva Dj Video Gallary</h1>
+    </div>
+    <div class="row">
+        <div class="column">
+            <iframe src="https://www.youtube.com/embed/0bHuvi-llYM" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/CSSeKu6hA9I" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+            <iframe src="https://www.youtube.com/embed/0lKZZJpaZN8" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/4BXL0OqpLGs" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+            <iframe src="https://www.youtube.com/embed/kABXyEMdU3w" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
 </body>
+
 </html>
