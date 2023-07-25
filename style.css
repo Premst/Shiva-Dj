@@ -98,7 +98,16 @@ html {
 
 .home-content {
     display: flex;
+    
     /* flex-flow: row-reverse; */
+}
+.home-content .image1 {
+    position: absolute;
+    bottom: 0vh;
+    left: 25vw;
+}
+.home-content .image1 img {
+  width: 8vw;
 }
 
 .home-content p {
@@ -194,18 +203,8 @@ html {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 
 }
-@media(max-width:800px){
-    .column{
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-@media(max-width:600px){
-    .column{
-        flex: 100%;
-        max-width: 100%;
-    }
-}
+
+
 
 /* gallary section  */
 
@@ -407,7 +406,21 @@ html {
     color:var(--orange);
 }
 
+/* responsive  */
 
+@media (max-width:1104px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+    .home-content .image1 {
+        position: absolute;
+        bottom: 15vh;
+        left: 28vw;
+    }
+    .home-content .image1 img {
+      width: 10vw;
+    }
+}
 
 @media (max-width:991px) {
 
@@ -423,16 +436,6 @@ html {
         padding: 2rem;
     }
 
-}
-
-
-@media (max-width:1104px) {
-    .home .max-width {
-        margin-left: 0px;
-    }
-}
-
-@media (max-width:991px) {
     .max-width {
         padding: 0 50px;
     }
@@ -446,9 +449,20 @@ html {
     }
 
     .image img {
-        margin-left: 40vw;
+        margin-left: 25vw;
     }
+   
+    .home-content .image1 {
+        position: absolute;
+        bottom: 15vh;
+        left: 45vw;
+    }
+    .home-content .image1 img {
+      width: 15vw;
+    }
+
 }
+
 
 @media (max-width:947px) {
 
@@ -459,6 +473,7 @@ html {
     .home .home-content .text-3 {
         font-size: 35px;
     }
+ 
 }
 
 @media (max-width:850px) {
@@ -470,20 +485,19 @@ html {
 
     .home-content .info {
         text-align: center;
-        padding-left: 20vw;
         padding-top: 1vh;
     }
 
-    .info {
+    /* .info {
         margin-left: 0vw;
         padding-left: 0vw;
         margin-right: 0vw;
-    }
+    } */
 
     .image img {
-        margin-left: 35vw;
-        width: 25vw;
-        padding-top: 10vh;
+        margin-left: 25vw;
+        width: 45vw;
+        padding-top: 8vh;
     }
 
     .services-list {
@@ -498,7 +512,23 @@ html {
     .h1Heading{
         font-weight: 600; 
         font-size: 6vw;
-    }  
+    } 
+    
+    .home-content .image1 {
+        position: absolute;
+        bottom: 10vh;
+        left: 50vw;
+    }
+    .home-content .image1 img {
+      width: 15vw;
+    }
+}
+@media(max-width:800px){
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+ 
 }
 
 @media (max-width:768px) {
@@ -541,10 +571,10 @@ html {
     }
     .home .home-content button {
         margin: auto 0 auto 0;        
-        font-size: 5px;
         padding:10px;
         margin-top: 20px;
     }
+ 
 
 }
 
@@ -565,6 +595,14 @@ html {
     .home .home-content a {
         font-size: 20px;
         padding: 9px 25px;
+    }
+    .home-content .image1 {
+        position: absolute;
+        bottom: 15vh;
+        left: 45vw;
+    }
+    .home-content .image1 img {
+      width: 18vw;
     }
 }
 
@@ -598,9 +636,29 @@ html {
         font-weight: 600; 
         font-size: 6vw;
     }  
-    
+    .home-content .image1 {
+        position: absolute;
+        bottom: 20vh;
+        left: 47vw;
+    }
+    .home-content .image1 img {
+      width: 19vw;
+    }
 
-
+}
+@media(max-width:600px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .home-content .image1 {
+        position: absolute;
+        bottom: 30vh;
+        left: 48vw;
+    }
+    .home-content .image1 img {
+      width: 20vw;
+    }
 }
 
 @media (max-width:500px) {
@@ -647,6 +705,14 @@ html {
         font-weight: 600; 
         font-size: 5vw;
     }  
+    .home-content .image1 {
+        position: absolute;
+        bottom: 40vh;
+        left: 42vw;
+    }
+    .home-content .image1 img {
+      width: 22vw;
+    }
 
 }
 
@@ -665,6 +731,14 @@ html {
     }
     .gallary .photos, .videos{
         font-size: 3vw;
+    }
+    .home-content .image1 {
+        position: absolute;
+        bottom: 50vh;
+        left: 42vw;
+    }
+    .home-content .image1 img {
+      width: 24vw;
     }
 }
 
